@@ -32,12 +32,24 @@ This repository contains my daily Data Structures and Algorithms (DSA) practice 
 - Backtracking
 - Recursion
 
-## Progress
+## folder structure 
 
-| Day | Problem | Difficulty |
-|------|----------|------------|
-| 1 | Two Sum | Easy |
-| 2 | Valid Parentheses | Easy |
+java-dsa-journey/
+│
+├── Arrays/
+├── Strings/
+├── LinkedList/
+├── Stack/
+├── Queue/
+├── Trees/
+├── Graphs/
+├── DynamicProgramming/
+├── Recursion/
+├── Backtracking/
+│
+├── README.md
+└── Progress.md
+
 
 ## Language
 - Java
