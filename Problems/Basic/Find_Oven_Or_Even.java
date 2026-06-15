@@ -1,7 +1,9 @@
 package Problems.Basic;
 
 public class Find_Oven_Or_Even {
-    public static void main(String[] args) {
-        System.out.println("hi git hub");
+    public boolean isEven(int n ){
+        if( n == 0){
+            return false;
+        } else return n % 2 == 0;
     }
 }
