@@ -1,7 +1,9 @@
 package Problems.Basic;
 
 public class Count_Digits_that_Divide {
+
 ///    https://www.geeksforgeeks.org/problems/count-digits5716/1
+
     public int countDigitsThatDivide(int n){
         int cnt  = 0;
 

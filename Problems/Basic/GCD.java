@@ -2,6 +2,7 @@ package Problems.Basic;
 
 public class GCD {
 
+///    https://www.geeksforgeeks.org/problems/gcd-of-two-numbers3459/1
 
     public static void main(String[] args) {
         GCD ref = new GCD();
