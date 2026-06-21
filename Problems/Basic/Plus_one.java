@@ -14,7 +14,7 @@ public class Plus_one {
     // my approach is wrong
     public int[] plusOne(int[] arr){
         long digits = 0;
-        for (int i = 0; i < arr.length; i++) {
+        for(int i = 0; i < arr.length; i++) {
             digits = digits *10 + arr[i];
         }
         digits += 1;
