@@ -3,34 +3,33 @@ package Problems.Basic;
 public class Square_Root {
     public static void main(String[] args) {
         Square_Root p = new Square_Root();
-        int result  = p.mySqrt(81);
+        int input  = 16;
+        int result  = p.mySqrt(input);
         System.out.println(result);
+        int inBuildFnResult = p.inBuild(input);
+        System.out.println(inBuildFnResult);
     }
     public int mySqrt(int n){
+        int mid = 0,low = 0,high = n;
 
-        int high = n;
-        if( high == 0){
-            return 0;
-        }
+        if(n <= 1) return n;
 
         // binary search alg
-
-        int mid =0,low =0;
-
         while (low <= high){
-            mid = (low + high )/2;
-            if( mid * mid == n){
-                return mid;
-            }
-            else if( mid * mid < n) {
-                low =  mid + 1 ;
-            }
-            else {
-                high = mid -1 ;
+            if (low == high) return mid;
+            // formula
+              mid =low +(high -low) /2;
 
-            }
+            int sqr = mid*mid;
+            if( sqr == n)  return  mid;
+            else if( sqr  < n) low =  mid + 1 ;
+            else  high = mid -1 ;
         }
         return mid;
+    }
+
+    public int inBuild(int n){
+        return (int) Math.sqrt((double) n);
     }
 //    algorithm
 /*
