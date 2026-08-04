@@ -1,8 +1,9 @@
 package Problems.Arrays.Two_d_Array;
 
+/// [link]( https://leetcode.com/problems/richest-customer-wealth/description/ )
 public class Richest_Customer_Wealth {
     public static void main(String[] args) {
-        int [][] account =  {{1,2,3},{3,2,1}};
+        int [][] account =  {{1,3,3},{3,2,1}};
         int res = maximumWealth(account);
         System.out.println(res);
     }
@@ -17,5 +18,14 @@ public class Richest_Customer_Wealth {
      */
     public static int maximumWealth(int[][] accounts) {
 
+        int maxRichest = 0;
+        for(int[] account : accounts){
+            int currentRichest = 0;
+            for(int money : account){
+                currentRichest += money;
+            }
+            maxRichest = Math.max(currentRichest, maxRichest);
+        }
+        return maxRichest;
     }
 }
